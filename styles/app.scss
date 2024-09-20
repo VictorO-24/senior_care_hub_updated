@@ -1,0 +1,37 @@
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header, .footer {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  
+  .sidebar {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    line-height: 1.5;
+  }
+  

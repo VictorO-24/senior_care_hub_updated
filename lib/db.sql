@@ -1,0 +1,34 @@
+CREATE TABLE appointments (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  date DATE NOT NULL,
+  time TIME NOT NULL
+);
+
+CREATE TABLE tasks (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  due_date DATE NOT NULL
+);
+
+CREATE TABLE medications (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  dosage VARCHAR(255) NOT NULL,
+  frequency VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE caregiver_tasks (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  task VARCHAR(255) NOT NULL,
+  date DATE NOT NULL
+);
+
+CREATE TABLE emergency_contacts (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  email VARCHAR(255) NOT NULL
+);
+
